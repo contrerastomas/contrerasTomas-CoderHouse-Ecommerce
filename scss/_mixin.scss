@@ -1,0 +1,17 @@
+
+
+@mixin anclas{
+
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fafafa;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+@mixin cardsInicio{
+    display: flex;
+    opacity: 75%;
+    background-size: cover;
+}
+

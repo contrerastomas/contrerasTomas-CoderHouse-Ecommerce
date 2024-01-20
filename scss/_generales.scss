@@ -1,0 +1,37 @@
+
+
+//generales
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'ArcadeClassic', sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas:
+
+        "header "
+        "main "
+        "footer "
+    ;
+    grid-template-rows: auto auto auto;
+    min-height: 100vh;
+    font-family:'Roboto Mono', monospace;
+    ;
+}

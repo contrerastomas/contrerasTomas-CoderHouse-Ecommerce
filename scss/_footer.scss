@@ -1,0 +1,57 @@
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    border: none;
+    background-color: #161A30;
+    overflow: hidden;
+    border-top: 1px solid grey;
+}
+
+.footerImg {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    justify-items: center;
+    margin: 1rem;
+}
+
+.registro h3 {
+    text-align: start;
+    padding: 20px;
+    color: #f1f1f1;
+}
+
+.footerImgLogo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.footerLow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:$color-secundario;
+    text-align: center;
+}
+
+/*profe aca no le pude cambiar el tamaño a el parrafo que viene predeterminado con bootstrap*/
+
+#textoSedesP {
+    font-size: 2rem;
+}
+
+#textoSedesH {
+    font-size: 4rem;
+}
+
+.footerLow>p {
+    margin: 1rem;
+    color: #fafafa;
+    font-size: 1rem;
+}
+
+label {
+    color: white;
+}

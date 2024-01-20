@@ -1,0 +1,208 @@
+//main
+
+
+main {
+    background-color: $color-principal;
+    overflow: hidden;
+    grid-area: main;
+}
+
+/* cartas de la tienda*/
+
+.contenedorTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+}
+
+.textTienda {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: #fafafa;
+}
+
+.cardsConteiner {
+    gap: 2rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    display: grid;
+}
+
+.cardsTienda {
+    text-align: center;
+    background-color: $color-secundario;
+    border-radius: 2rem;
+}
+
+.tituloTiendaCard {
+    display: block;
+    border-bottom: $color-secundario solid;
+    color: #fafafa;
+    padding-top: 1rem;
+    font-size: 2rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.textLinkTiendaCard {
+    font-size: 1.5rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    background-color: #fafafa;
+}
+
+/* cartas del home*/
+
+.ContenedorCardsHome {
+    
+    height: max-content;
+    margin: 4rem;
+    position: relative;
+    width: 100%;
+    display: grid;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.cardsHome {
+    gap: 2rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    display: grid;
+    height: 20rem;
+}
+
+.c15 {
+    background-image: url(../assets/musculacion.jpg);
+    @include cardsInicio;
+}
+
+.c16 {
+    background-image: url(../assets/crossfit.jpg);
+    @include cardsInicio;
+
+}
+
+.c17 {
+    background-image: url(../assets/pilates.jpg);
+    @include cardsInicio;
+
+}
+
+.c18 {
+    background-image: url(../assets/entrenadorpersonal.jpg);
+    @include cardsInicio;
+
+}
+
+.c19 {
+    @include cardsInicio;
+    
+    background-image: url(../assets/clasesgrupales.jpg);
+}
+
+.anclaHome {
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    width: max-content;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    background-color: #131313;
+    color: #ffffff;
+    @include anclas;
+}
+
+.textBox {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.anclaHome:hover {
+    font-size: 2.2rem;
+    transition: 0.3s;
+}
+
+/* cartas de clases*/
+
+
+/* cartas de Sedes*/
+
+.contenedorSedes {
+    border-radius: 2rem;
+}
+
+.imgCarousel {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(44, 49, 60, 0.75));
+}
+
+.textoSedesH {
+    font-size: 1rem;
+}
+
+.textoSedesP {
+    color: white;
+    font-size: 1rem;
+}
+
+.contenedorSedes1 {
+    background-color: #262626;
+}
+
+
+/* cartas de nosotros*/
+
+.registro {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    display: flex;
+    display: block;
+    justify-items: center;
+    background-color: #161A30;
+    height: 100%;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.registroContenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselNosotros h3 {
+    font-size: 2rem;
+}
+
+.cd {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 3rem;
+    border: 1px solid grey;
+}
+
+.labelNosotros {
+    font-size: 2rem;
+}
+
+.buttonNosotros {
+    font-size: 1.5rem;
+}
