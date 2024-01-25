@@ -5,14 +5,15 @@
 
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:$color-principal;
-    height: 100%;
+    background-color:$color-secundario;
+    height: max-content;
     width: 100%;
     grid-area: header;
     overflow: hidden;
-    gap: 3rem;
+
 }
 
 .navbar {
@@ -21,22 +22,17 @@ header {
     margin: 0.1rem;
     margin: 2rem auto;
     padding-right: 1rem;
+    border-bottom: rgb(166, 186, 36) solid 1px;
 }
 
-li {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    border: none;
-    padding: 0.5rem 0;
 
-    :hover {
-        font-size: 2.2rem;
-        border: none;
-    }
-
-    a {
-
-        @include anclas;
-    }
+    #li{
+        a{
+            @include anclas;
+        }
+        :hover {
+            border: grey solid 1px;
+            color: #f1f1f1;
+            font-size: 1.5rem;
+}
 }

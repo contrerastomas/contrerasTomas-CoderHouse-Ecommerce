@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MUTANT GYM FITNESS CENTER</title>
+    <title> MUTANT GYM F.C</title>
+    <link rel="icon" href="./assets/LOGO-MGFC.jpg">
+    <meta name="keywords" content="gym gimnasio entreneamiento ">
+    <meta name="description" content="somos los pioneros en el entreneamiento de atletas de alto rendimiento">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -19,30 +22,40 @@
 
 <body>
 
-    <header>
+
+    <header class="p-3 text-bg-dark">
         <div class="headerContainer">
             <h1>Mutant gym fitness center</h1>
-            <nav class="navbar">
-                <ul class="nav nav-tabs border-bottom border-danger">
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" aria-current="page" href="../index.html">inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/tienda.html">tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/clases.html">clases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="./pages/nosotros.html">nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/sedes.html">sedes</a>
-                    </li>
-                </ul>
-            </nav>
 
         </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                
+                <button   class=" bg-danger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=" buttonNav navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse navbarConteiner" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li  id="li"   class="nav-item">
+                            <a class="nav-link active bg-black" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li  id="li"   class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li  id="li"   class="nav-item">
+                            <a class="nav-link" href="./pages/clases.html">Clases</a>
+                        </li>
+                        <li id="li"    class="nav-item ">
+                            <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li  id="li"   class="nav-item">
+                            <a class="nav-link" href="./pages/sedes.html">Sedes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
 
@@ -53,73 +66,97 @@
 
 
 
-        <!-- banner -->
+        <section>
+            
+            <h2>Home</h2>
 
-        <section class="bannerContenedor">
-            <h2>Inicio</h2>
-            <img class="banner animate__animated  animate__lightSpeedInLeft" src="./assets/banner.jpeg" alt="">
+
+            <!-- banner -->
+
+            <section class="bannerContenedor">
+                <img class="banner animate__animated  animate__lightSpeedInLeft" src="./assets/banner.jpeg" alt="banner de chris bumstead">
+            </section>
+
+            <!-- contenedor de actividades -->
+
+            <section class="border">
+                <h2>Nuestras actividades</h2>
+                <div class="ContenedorCardsHome" data-aos="zoom-in">
+
+                    <article class="cardsHome c15">
+                        <div class="textBox"><a class="anclaHome" href="#">sala de musculacion</a> </div>
+
+                    </article>
+
+                    <article class="cardsHome c16">
+                        <div class="textBox"><a class="anclaHome" href="#">crossfit</a> </div>
+
+                    </article>
+                    <article class="cardsHome c17">
+                        <div class="textBox"> <a class="anclaHome" href="#">pilates</a></div>
+                    </article>
+
+                    <article class="cardsHome c18">
+                        <div class="textBox"><a class="anclaHome" href="#">entrenamiejntos <br>
+                                personalizados</a></div>
+
+                    </article>
+
+                    <article class="cardsHome c19">
+                        <div class="textBox"><a class="anclaHome" href="./pages/clases.html">clases <br> grupales</a>
+                        </div>
+
+                    </article>
+
+                </div>
+            </section>
+
+
+
+
         </section>
-
-        <!-- contenedor de actividades -->
-
-        <section class="border">
-            <h2>Nuestras actividades</h2>
-            <div class="ContenedorCardsHome" data-aos="zoom-in">
-
-                <article class="cardsHome c15">
-                    <div class="textBox"><a class="anclaHome" href="#">sala de musculacion</a> </div>
-
-                </article>
-
-                <article class="cardsHome c16">
-                    <div class="textBox"><a class="anclaHome" href="#">crossfit</a> </div>
-
-                </article>
-                <article class="cardsHome c17">
-                    <div class="textBox"> <a class="anclaHome" href="#">pilates</a></div>
-                </article>
-
-                <article class="cardsHome c18">
-                    <div class="textBox"><a class="anclaHome" href="#">entrenamiejntos <br>
-                            personalizados</a></div>
-
-                </article>
-
-                <article class="cardsHome c19">
-                    <div class="textBox"><a class="anclaHome" href="./pages/clases.html">clases <br> grupales</a> </div>
-
-                </article>
-
-            </div>
-        </section>
-
-
-
-
 
 
     </main>
 
 
     <footer>
-        <h2>seguinos en </h2>
+        <div class="footerContenedor"></div>
+        <div class="siteMaps">
 
-        <div class="footerImg">
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="./assets/instagram.png"
-                    alt=""></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="./assets/youtube.png"
-                    alt=""></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
-                    src="./assets/vectorfacebook.png" alt=""></a>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/tienda.html">tienda</a></li>
+                <li><a href="./pages/clases.html">Clases</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/sedes.html">sedes</a></li>
+            </ul>
+
         </div>
+
+
 
 
         <div class="footerLow">
-            <p>dirección sucursal principal :Parque Thays, Av. del Libertador 2048-2002, C1425 CABA</p>
-            <p>Contacto comercial cuentas corporativas:<br> tomasportunato@outlook.com</p>
+            <div class="correo">
+                <h3>correo</h3>
+            <p>tomasportunato@outlook.com</p>
+
+            </div>
+            <div>
+                <h3>nuestras redes</h3>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="../assets/instagram.png"
+                    alt="logo instagram"></a>
+            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="../assets/youtube.png"
+                    alt="logo youtube"></a>
+            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                    src="../assets/vectorfacebook.png" alt="logo facebook"></a>
+            </div>
         </div>
+    </div>
 
     </footer>
+
 
 
 

@@ -3,18 +3,17 @@
 footer {
     grid-area: footer;
     border: none;
-    background-color: #161A30;
+    background-color: $color-secundario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow: hidden;
     border-top: 1px solid grey;
+    gap: 2rem;
 }
 
-.footerImg {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    justify-items: center;
-    margin: 1rem;
-}
+
+
 
 .registro h3 {
     text-align: start;
@@ -22,35 +21,59 @@ footer {
     color: #f1f1f1;
 }
 
-.footerImgLogo {
-    width: 3rem;
-    height: 3rem;
+.siteMaps {
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 
+        2rem;
+    }
+
+    li {
+        font-size: 1.3rem;
+        list-style: none;
+
+        a {
+            color: #f1f1f1;
+            text-decoration: none;
+            border-bottom: grey solid 1px;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+    }
+
 }
 
+
 .footerLow {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    background-color:$color-secundario;
     text-align: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    div {
+        h3 {
+            font-size: 1.5rem;
+            color: #f1f1f1;
+        }
+
+        a {
+            img {
+                margin: 1rem;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        p {
+            color: #f1f1f1;
+            font-size: 1rem;
+        }
+    }
 }
 
 /*profe aca no le pude cambiar el tamaño a el parrafo que viene predeterminado con bootstrap*/
-
-#textoSedesP {
-    font-size: 2rem;
-}
-
-#textoSedesH {
-    font-size: 4rem;
-}
-
-.footerLow>p {
-    margin: 1rem;
-    color: #fafafa;
-    font-size: 1rem;
-}
 
 label {
     color: white;

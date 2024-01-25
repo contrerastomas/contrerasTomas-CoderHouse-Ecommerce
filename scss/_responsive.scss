@@ -3,23 +3,56 @@
 //header
 
 @media (min-width:760px) {
+
+    header{
+        height: max-content;
+        flex-direction: row;
+    }
+
+    h2 {
+        margin: 1rem;
+        font-size: 3rem;
+        color: #fafafa;
+        text-align: center;
+    }
+
+
+    .buttonNav{
+        width: 5rem;
+        height: 2rem;
+    }
+
     .headerContainer h1 {
         font-size: 3rem;
         margin: 1rem auto;
-        margin-top: 3rem;
+        margin-left: 4rem;
     }
 
-    .navbar ul li {
-        font-size: 2rem;
-    }
+    #li{
+        a{
+            font-size: 2rem;
+        }
+        :hover {
+            border: grey solid 1px;
+            color: #f1f1f1;
+            font-size: 2.3rem;
+}
+}
+
+
+
+    
 
     .navbar ul {
         gap: 3rem;
-        margin-bottom: 4rem;
     }
 }
 
 @media (min-width:1020px) {
+
+    header{
+        height: max-content;
+    }
 
     .headerContainer {
         display: flex;
@@ -27,9 +60,10 @@
         margin-top: 1rem;
         gap: 5rem;
         padding-bottom: 3rem;
-        background-color: #131313;
         border-radius: 2rem;
-        height: 50%;
+        nav{
+            margin-top: 3rem;
+        }
 
     }
 
@@ -37,7 +71,19 @@
         height: max-content;
         padding: 0 2rem;
         padding-right: 2rem;
+        font-size: 3.4rem;
+        margin-top: 4.6rem;
     }
+    #li{
+        a{
+            font-size: 3rem;
+        }
+        :hover {
+            border: grey solid 1px;
+            color: #f1f1f1;
+            font-size: 3.3rem;
+}
+}
 
     .headerContainer h1:hover {
 
@@ -92,6 +138,7 @@
         flex-direction: row;
         gap: 3rem;
         justify-content: center;
+        
 
     }
 
@@ -137,6 +184,24 @@
 
 //nosotros
 
+@media (min-width:760px) {
+    .registroContenedor {
+
+        border: rgb(166, 186, 36) solid 1px;
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+    .contenedorCheckout{
+        display: flex;
+        margin: 5rem;
+        margin-left:30rem;
+
+        flex-direction: column;
+    }
+}
+
 @media (min-width:1020px) {
 
     .carouselNosotros {
@@ -149,6 +214,22 @@
     .carouselNosotrosImg {
         width: 60%;
     }
+
+    .registroContenedor {
+
+        border: rgb(166, 186, 36) solid 1px;
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+    .contenedorCheckout{
+        display: flex;
+        margin: 5rem;
+        margin-left:35rem;
+
+        flex-direction: column;
+    }
 }
 
 
@@ -158,34 +239,115 @@
 
 
 @media (min-width:760px) {
-    .footerImgLogo {
-        width: 5rem;
-        height: 5rem;
+    .siteMaps {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 
+            2rem;
+        }
+    
+        li {
+            font-size: 2.5rem;
+            list-style: none;
+    
+            a {
+                color: #f1f1f1;
+                text-decoration: none;
+                border-bottom: grey solid 1px;
+                font-family: 'Roboto Mono', monospace;
+            }
+    
+        }
+    
     }
-
-    h2 {
-        font-size: 3rem;
-
-    }
-
-    footer h4 {
-        margin: 2rem;
-        font-size: 3rem;
-    }
-
-    .footerImg {
-        margin: 3rem;
-    }
-
-    .footerLow>p {
-        font-size: 2rem;
+    
+    
+    .footerLow {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    
+        div {
+            h3 {
+                font-size: 2.5rem;
+                color: #f1f1f1;
+            }
+    
+            a {
+                img {
+                    margin: 1rem;
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+    
+            p {
+                color: #f1f1f1;
+                font-size: 2rem;
+            }
+        }
     }
 }
 
 @media (min-width:1024px) {
-    .footerImgLogo {
-        width: 8rem;
-        height: 8rem;
+    footer{
+        gap: 8rem;
+    }
+    .siteMaps {
+        display: flex;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 
+            2rem;
+        }
+    
+        li {
+            font-size: 2.5rem;
+            list-style: none;
+    
+            a {
+                color: #f1f1f1;
+                text-decoration: none;
+                border-bottom: grey solid 1px;
+                font-family: 'Roboto Mono', monospace;
+            }
+    
+        }
+    
+    }
+    
+    
+    .footerLow {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 10rem;
+        margin-bottom: 3rem;
+    
+        div {
+            h3 {
+                font-size: 2.5rem;
+                color: #f1f1f1;
+            }
+    
+            a {
+                img {
+                    margin: 1rem;
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+    
+            p {
+                color: #f1f1f1;
+                font-size: 2rem;
+            }
+        }
     }
 }
 

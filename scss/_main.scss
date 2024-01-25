@@ -5,6 +5,7 @@ main {
     background-color: $color-principal;
     overflow: hidden;
     grid-area: main;
+
 }
 
 /* cartas de la tienda*/
@@ -35,6 +36,7 @@ main {
     text-align: center;
     background-color: $color-secundario;
     border-radius: 2rem;
+    
 }
 
 .tituloTiendaCard {
@@ -70,6 +72,7 @@ main {
     display: grid;
     row-gap: 2rem;
     align-items: center;
+
 }
 
 .cardsHome {
@@ -120,6 +123,8 @@ main {
     background-color: #131313;
     color: #ffffff;
     @include anclas;
+    border: rgb(166, 186, 36) solid 1px;
+
 }
 
 .textBox {
@@ -130,6 +135,7 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
+
 }
 
 .anclaHome:hover {
@@ -167,20 +173,28 @@ main {
 /* cartas de nosotros*/
 
 .registro {
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     display: flex;
     display: block;
     justify-items: center;
     background-color: #161A30;
     height: 100%;
-
+    h2{
+        text-align: center;
+    }
     h3 {
         text-align: center;
     }
 }
 
 .registroContenedor {
+
+    border: rgb(166, 186, 36) solid 1px;
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedorCheckout{
     display: flex;
     flex-direction: column;
 }
@@ -196,7 +210,8 @@ main {
     text-align: center;
     margin: 2rem;
     border-radius: 3rem;
-    border: 1px solid grey;
+    border: rgb(166, 186, 36) solid 1px;
+    
 }
 
 .labelNosotros {

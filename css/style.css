@@ -27,14 +27,14 @@ body {
 /*header*/
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #161A30;
-  height: 100%;
+  background-color: #131313;
+  height: max-content;
   width: 100%;
   grid-area: header;
   overflow: hidden;
-  gap: 3rem;
 }
 
 .navbar {
@@ -43,25 +43,21 @@ header {
   margin: 0.1rem;
   margin: 2rem auto;
   padding-right: 1rem;
+  border-bottom: rgb(166, 186, 36) solid 1px;
 }
 
-li {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  border: none;
-  padding: 0.5rem 0;
-}
-li :hover {
-  font-size: 2.2rem;
-  border: none;
-}
-li a {
+#li a {
   text-decoration: none;
   text-transform: capitalize;
   color: #fafafa;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  border-radius: 2rem;
+}
+#li :hover {
+  border: grey solid 1px;
+  color: #f1f1f1;
+  font-size: 1.5rem;
 }
 
 main {
@@ -190,6 +186,8 @@ main {
   color: #fafafa;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  border-radius: 2rem;
+  border: rgb(166, 186, 36) solid 1px;
 }
 
 .textBox {
@@ -232,19 +230,27 @@ main {
 
 /* cartas de nosotros*/
 .registro {
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex-direction: column-reverse;
   display: flex;
   display: block;
   justify-items: center;
   background-color: #161A30;
   height: 100%;
 }
+.registro h2 {
+  text-align: center;
+}
 .registro h3 {
   text-align: center;
 }
 
 .registroContenedor {
+  border: rgb(166, 186, 36) solid 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorCheckout {
   display: flex;
   flex-direction: column;
 }
@@ -260,7 +266,7 @@ main {
   text-align: center;
   margin: 2rem;
   border-radius: 3rem;
-  border: 1px solid grey;
+  border: rgb(166, 186, 36) solid 1px;
 }
 
 .labelNosotros {
@@ -282,7 +288,10 @@ main {
 }
 
 .banner {
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /*titulos*/
@@ -291,12 +300,11 @@ h1 {
   display: block;
   width: max-content;
   font-size: 1.8rem;
-  margin: 3rem auto;
+  margin-top: 3rem;
   color: #fff;
   text-shadow: #fff 0 0 10px;
 }
 h1:hover {
-  font-size: 2.5rem;
   border-bottom: rgb(166, 186, 36) solid 1px;
   transition: 0.2s;
   background: linear-gradient(to right, black);
@@ -312,9 +320,15 @@ h4 {
 
 h2 {
   margin: 1rem;
-  font-size: 2rem;
   color: #fafafa;
+  font-size: 2rem;
   text-align: center;
+  border-bottom: rgb(166, 186, 36) solid 1px;
+  width: max-content;
+}
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
 }
 
 p {
@@ -326,17 +340,13 @@ p {
 footer {
   grid-area: footer;
   border: none;
-  background-color: #161A30;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
   border-top: 1px solid grey;
-}
-
-.footerImg {
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-  justify-items: center;
-  margin: 1rem;
+  gap: 2rem;
 }
 
 .registro h3 {
@@ -345,68 +355,109 @@ footer {
   color: #f1f1f1;
 }
 
-.footerImgLogo {
-  width: 3rem;
-  height: 3rem;
+.siteMaps ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.siteMaps li {
+  font-size: 1.3rem;
+  list-style: none;
+}
+.siteMaps li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  border-bottom: grey solid 1px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .footerLow {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #131313;
   text-align: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
-
-/*profe aca no le pude cambiar el tamaño a el parrafo que viene predeterminado con bootstrap*/
-#textoSedesP {
-  font-size: 2rem;
+.footerLow div h3 {
+  font-size: 1.5rem;
+  color: #f1f1f1;
 }
-
-#textoSedesH {
-  font-size: 4rem;
-}
-
-.footerLow > p {
+.footerLow div a img {
   margin: 1rem;
-  color: #fafafa;
+  width: 3rem;
+  height: 3rem;
+}
+.footerLow div p {
+  color: #f1f1f1;
   font-size: 1rem;
 }
 
+/*profe aca no le pude cambiar el tamaño a el parrafo que viene predeterminado con bootstrap*/
 label {
   color: white;
 }
 
 @media (min-width: 760px) {
+  header {
+    height: max-content;
+    flex-direction: row;
+  }
+  h2 {
+    margin: 1rem;
+    font-size: 3rem;
+    color: #fafafa;
+    text-align: center;
+  }
+  .buttonNav {
+    width: 5rem;
+    height: 2rem;
+  }
   .headerContainer h1 {
     font-size: 3rem;
     margin: 1rem auto;
-    margin-top: 3rem;
+    margin-left: 4rem;
   }
-  .navbar ul li {
+  #li a {
     font-size: 2rem;
+  }
+  #li :hover {
+    border: grey solid 1px;
+    color: #f1f1f1;
+    font-size: 2.3rem;
   }
   .navbar ul {
     gap: 3rem;
-    margin-bottom: 4rem;
   }
 }
 @media (min-width: 1020px) {
+  header {
+    height: max-content;
+  }
   .headerContainer {
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
     gap: 5rem;
     padding-bottom: 3rem;
-    background-color: #131313;
     border-radius: 2rem;
-    height: 50%;
+  }
+  .headerContainer nav {
+    margin-top: 3rem;
   }
   .headerContainer h1 {
     height: max-content;
     padding: 0 2rem;
     padding-right: 2rem;
+    font-size: 3.4rem;
+    margin-top: 4.6rem;
+  }
+  #li a {
+    font-size: 3rem;
+  }
+  #li :hover {
+    border: grey solid 1px;
+    color: #f1f1f1;
+    font-size: 3.3rem;
   }
   .headerContainer h1:hover {
     border-bottom: rgb(166, 186, 36) solid 3px;
@@ -467,6 +518,19 @@ label {
     width: 60%;
   }
 }
+@media (min-width: 760px) {
+  .registroContenedor {
+    border: rgb(166, 186, 36) solid 1px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorCheckout {
+    display: flex;
+    margin: 5rem;
+    margin-left: 30rem;
+    flex-direction: column;
+  }
+}
 @media (min-width: 1020px) {
   .carouselNosotros {
     display: flex;
@@ -477,30 +541,97 @@ label {
   .carouselNosotrosImg {
     width: 60%;
   }
+  .registroContenedor {
+    border: rgb(166, 186, 36) solid 1px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorCheckout {
+    display: flex;
+    margin: 5rem;
+    margin-left: 35rem;
+    flex-direction: column;
+  }
 }
 @media (min-width: 760px) {
-  .footerImgLogo {
+  .siteMaps ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .siteMaps li {
+    font-size: 2.5rem;
+    list-style: none;
+  }
+  .siteMaps li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    border-bottom: grey solid 1px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .footerLow {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .footerLow div h3 {
+    font-size: 2.5rem;
+    color: #f1f1f1;
+  }
+  .footerLow div a img {
+    margin: 1rem;
     width: 5rem;
     height: 5rem;
   }
-  h2 {
-    font-size: 3rem;
-  }
-  footer h4 {
-    margin: 2rem;
-    font-size: 3rem;
-  }
-  .footerImg {
-    margin: 3rem;
-  }
-  .footerLow > p {
+  .footerLow div p {
+    color: #f1f1f1;
     font-size: 2rem;
   }
 }
 @media (min-width: 1024px) {
-  .footerImgLogo {
-    width: 8rem;
-    height: 8rem;
+  footer {
+    gap: 8rem;
+  }
+  .siteMaps {
+    display: flex;
+  }
+  .siteMaps ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .siteMaps li {
+    font-size: 2.5rem;
+    list-style: none;
+  }
+  .siteMaps li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    border-bottom: grey solid 1px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .footerLow {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10rem;
+    margin-bottom: 3rem;
+  }
+  .footerLow div h3 {
+    font-size: 2.5rem;
+    color: #f1f1f1;
+  }
+  .footerLow div a img {
+    margin: 1rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .footerLow div p {
+    color: #f1f1f1;
+    font-size: 2rem;
   }
 }
 
