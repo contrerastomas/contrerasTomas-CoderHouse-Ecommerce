@@ -1,181 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tienda- MUTANT GYM F.C</title>
-        <link rel="icon" href="../assets/LOGO-MGFC.jpg">
-        <meta name="keywords" content="gym gimnasio entreneamiento ">
-        <meta name="description" content="somos los pioneros en el entreneamiento de atletas de alto rendimiento">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-    
-    
-    
-    </head>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda- MUTANT GYM F.C</title>
+    <link rel="icon" href="../assets/LOGO-MGFC.jpg">
+    <meta name="keywords" content="gym gimnasio entreneamiento ">
+    <meta name="description" content="somos los pioneros en el entreneamiento de atletas de alto rendimiento">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+
+</head>
+
 
 
 <body>
 
-
-    <header class="p-3 text-bg-dark">
+    <header>
         <div class="headerContainer">
+
+
+            <div id="logoHeader">
+                <a href="./index.html"><img src="../assets/LOGO-MGFC.jpg" alt=""></a>
+            </div>
+
             <h1>Mutant gym fitness center</h1>
 
-        </div>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                
-                <button   class=" bg-danger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=" buttonNav navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse navbarConteiner" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link active" href="../index.html">Home</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link active bg-black" aria-current="page" href="./tienda.html">Tienda</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link" href="./clases.html">Clases</a>
-                        </li>
-                        <li id="li"    class="nav-item ">
-                            <a class="nav-link " href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link" href="./sedes.html">Sedes</a>
-                        </li>
-                    </ul>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="contenedorNavbar container-fluid">
+
+                    <button class=" bg-danger navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class=" buttonNav navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbarConteiner" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li id="li" class="nav-item">
+                                <a class="nav-link " href="../index.html">Home</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link active bg-black" aria-current="page" href="./tienda.html">Tienda</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link" href="./clases.html">Clases</a>
+                            </li>
+                            <li id="li" class="nav-item ">
+                                <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link" href="./sedes.html">Sedes</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </div>
+
+        <!-- cierre de navbar -->
+
+        <!-- botones y modal -->
+        <div class="botonesMenu">
+
+
+            <label class="botonMenu" for="btn-modal">iniciar Secion</label>
+
+
+            <label for="" class="botonMenu2 "><a href="./registro.html">registrarse</a>
+            </label>
+
+
+            <!--Ventana Modal-->
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <div class="formularioLogin">
+                        <h3>inicia sesion</h3>
+
+                        <form method="post">
+
+                            <div class="inputBox">
+                                <input type="text" required id="userName" placeholder="nombre de usuario">
+                                <i class='bx bxs-user'></i>
+
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="password" required id="password" placeholder="contraseña">
+                                <i class='bx bxs-lock-alt'></i>
+
+                            </div>
+
+
+
+                            <div class="recordatorio">
+                                <label for=""><input type="checkbox">recordarme</label>
+                            </div>
+
+                            <div class="loginButton">
+                                <button type="submit" class="btn">iniciar sesion</button>
+                            </div>
+
+
+
+
+                        </form>
+
+                    </div>
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">Cerrar</label>
+                    </div>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
             </div>
-        </nav>
+            <!--Fin de Ventana Modal-->
+
+
+        </div>
+
     </header>
+
 
 
     <main>
 
         <section>
+            <div class="tituloH2">
+                <h2>Nuestra tienda</h2>
 
-            <h2>Nuestros Productos</h2>
-
-            <article class="contenedorTienda  ">
+            </div>
 
 
-                <div class=" cardsConteiner">
 
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/accesorias.jpg" class="card-img-top " alt="imagen de accesorias">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title" href="#"  >accesorias</h3>
-                            <p class="card-text textTienda">
-                                Nutricion
-                                <br>
+
+
+
+            <div class="contenedorTienda">
+                <div class="contenedorTiendaFit">
+                    <div class="imgTienda">
+                        <h3>transforma tu vida</h3>
+                        
+
+                    </div>
+
+
+                    <div class="contenedorCardsGeneral">
+                        <div class="contenedorCardsTienda">
+                            <h4>membresias</h4>
+                            <img src="../assets/membresias.jpg" alt="imagen de membresias">
+                            <p>Diarias , Mensuales , Anuales</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="contenedorCardsTienda">
+                            <h4>accesorias</h4>
+                            <img src="../assets/accesorias.jpg" alt="">
+                            <p>Nutricion
+                                ,
                                 Entrenamientos
-                                <br>
-
                             </p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
+
                         </div>
 
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                        <div class="contenedorCardsTienda">
+                            <h4>clases grupales</h4>
+                            <img src="../assets/clasesgrupales.jpg" alt=" calses grupales deportivas">
+                            <p>Boxeo , Jiu jitsu , Gap.</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
+
+
                         </div>
+                    </div>
+                </div>
+
+                <div class="contenedorTiendaFit">
+                    <div class="imgTienda">
+                        <h3>accesorios</h3>
+                        
                     </div>
 
 
 
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/clasesgrupales2.jpg" class="card-img-top " alt="imagen de clases grupales">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">clases</h3>
-                            <p class="card-text textTienda">Boxeo , Jiu jitsu , Gap.</p>
+                    <div class="contenedorCardsGeneral">
+                        <div class="contenedorCardsTienda">
+                            <h4>equipo</h4>
+                            <img src="../assets/equipo.jpg" alt="pesas">
+                            <p>hace de tu lugar un box.</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
+
                         </div>
 
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
-                    </div>
+                        <div class="contenedorCardsTienda">
+                            <h4>clothes</h4>
+                            <img src="../assets/ropadeportiva.jpg" alt="ropa deportiva">
+                            <p>ropa deportiva</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
 
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/equipo.jpg" class="card-img-top " alt="imagen de equipo">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">equipo</h3>
-                            <p class="card-text textTienda">Todo lo que necesitas para entrenar en casa.</p>
-                        </div>
-
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
                         </div>
                     </div>
-
-
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/membresias.jpg" class="card-img-top" alt="imagen de membresias">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">membresias</h3>
-                            <p class="card-text textTienda">Diarias , Mensuales , Anuales</p>
-                        </div>
-
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
-                    </div>
-
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/ropadeportiva.jpg" class="card-img-top" alt="imagen de ropa deportiva">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">clothes</h3>
-                            <p class="card-text textTienda">ropa orientada a tu tipo de entrenamiento</p>
-                        </div>
-
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
-                    </div>
-
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/wheyprotein.jpg" class="card-img-top" alt="imagen de whey protein">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">suplementos</h3>
-                            <p class="card-text textTienda">Lleva al maximo tu rendimiento con los mejores suplementos.</p>
-                        </div>
-
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
-                    </div>
-
                 </div>
 
 
+            </div>
 
-            </article>
+
+
+
 
         </section>
 
     </main>
-    <footer>
-        <div class="footerContenedor"></div>
-        <div class="siteMaps">
 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./tienda.html">tienda</a></li>
-                <li><a href="./clases.html">Clases</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./sedes.html">sedes</a></li>
-            </ul>
+    <footer>
+
+
+
+
+        <div class="logoContenedor">
+            <img src="../assets/LOGO-MGFC.jpg" alt="">
+        </div>
+
+
+        <div class="siteMaps">
+            <div>
+                <h3>ayuda</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./tienda.html">tienda</a></li>
+                    <li><a href="./clases.html">Clases</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./sedes.html">sedes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>formas de pago</h3>
+                <ul>
+                    <li>PayPall</li>
+                    <li>Billetera electronica</li>
+                    <li>efectivo en sucursales</li>
+                    <li>puntos de pago</li>
+                </ul>
+            </div>
 
         </div>
 
@@ -183,20 +274,20 @@
         <div class="footerLow">
             <div class="correo">
                 <h3>correo</h3>
-            <p>tomasportunato@outlook.com</p>
+                <p>tomasportunato@outlook.com</p>
 
             </div>
             <div>
                 <h3>nuestras redes</h3>
-                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="../assets/instagram.png"
-                    alt="logo instagram"></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="../assets/youtube.png"
-                    alt="logo youtube"></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
-                    src="../assets/vectorfacebook.png" alt="logo facebook"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="../assets/instagram.png" alt="logo instagram"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="../assets/youtube.png" alt="logo youtube"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="../assets/vectorfacebook.png" alt="logo facebook"></a>
             </div>
         </div>
-    </div>
+        </div>
 
     </footer>
 
@@ -208,10 +299,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

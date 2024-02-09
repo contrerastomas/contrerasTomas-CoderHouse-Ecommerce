@@ -22,41 +22,112 @@
 
 <body>
 
-    
 
-    <header class="p-3 text-bg-dark">
+
+
+    <header>
         <div class="headerContainer">
+
+
+            <div id="logoHeader">
+                <a href="./index.html"><img src="../assets/LOGO-MGFC.jpg" alt=""></a>
+            </div>
+
             <h1>Mutant gym fitness center</h1>
 
-        </div>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                
-                <button   class=" bg-danger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=" buttonNav navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse navbarConteiner" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link active" href="../index.html">Home</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link "  href="./tienda.html">Tienda</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link active bg-black" aria-current="page" href="./clases.html">Clases</a>
-                        </li>
-                        <li id="li"    class="nav-item ">
-                            <a class="nav-link " href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link" href="./sedes.html">Sedes</a>
-                        </li>
-                    </ul>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="contenedorNavbar container-fluid">
+
+                    <button class=" bg-danger navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class=" buttonNav navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbarConteiner" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li id="li" class="nav-item">
+                                <a class="nav-link " href="../index.html">Home</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link" href="./tienda.html">Tienda</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link active bg-black" aria-current="page" href="./clases.html">Clases</a>
+                            </li>
+                            <li id="li" class="nav-item ">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link" href="./sedes.html">Sedes</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </div>
+
+        <!-- cierre de navbar -->
+
+        <!-- botones y modal -->
+        <div class="botonesMenu">
+
+
+            <label class="botonMenu" for="btn-modal">iniciar Secion</label>
+
+
+            <label for="" class="botonMenu2 "><a href="./registro.html">registrarse</a>
+            </label>
+
+
+            <!--Ventana Modal-->
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <div class="formularioLogin">
+                        <h3>inicia sesion</h3>
+
+                        <form method="post">
+
+                            <div class="inputBox">
+                                <input type="text" required id="userName" placeholder="nombre de usuario">
+                                <i class='bx bxs-user'></i>
+
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="password" required id="password" placeholder="contraseña">
+                                <i class='bx bxs-lock-alt'></i>
+
+                            </div>
+
+
+
+                            <div class="recordatorio">
+                                <label for=""><input type="checkbox">recordarme</label>
+                            </div>
+
+                            <div class="loginButton">
+                                <button type="submit" class="btn">iniciar sesion</button>
+                            </div>
+
+
+
+
+                        </form>
+
+                    </div>
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">Cerrar</label>
+                    </div>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
             </div>
-        </nav>
+            <!--Fin de Ventana Modal-->
+
+
+        </div>
+
     </header>
 
 
@@ -64,138 +135,164 @@
     <main>
 
         <section class="sectionTienda">
-            <h2>clases</h2>
+            <div class="tituloH2">
+                <h2>clases grupales</h2>
+
+            </div>
 
 
 
-            <article class="contenedorTienda  ">
+
+            <div class="contenedorTienda">
+                <div class="contenedorTiendaFit">
+                    <div class="imgTienda">
+                        <h3>construye tu confianza</h3>
 
 
-                <div class=" cardsConteiner">
-
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/spinnig.jpg" class="card-img-top " alt="imagen de spinnig">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">spinning</h3>
-                            <p class="card-text textTienda">ejercicio aeróbico y cardiovascular que se realiza sobre una bicicleta estática en el que se trabaja el tren inferior.</p>
-                        </div>
-
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
                     </div>
 
 
+                    <div class="contenedorCardsGeneral">
+                        <div class="contenedorCardsClases">
+                            <h4>GAP</h4>
+                            <img src="../assets/gap.jpg" alt="imagen de GAP">
+                            <p>El GAP es una clase grupal dirigida por un monitor que se
+                                centran en el trabajo de glúteos, abdomen y piernas.</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
 
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/taekando.jpg" class="card-img-top " alt="imagen de taekwondo">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">taekwondo</h3>
-                            <p class="card-text textTienda">El Taekwondo es un arte marcial moderno de los coreanos. Este deporte o arte utiliza diferentes técnicas de patada.</p>
+
                         </div>
 
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
-                    </div>
+                        <div class="contenedorCardsClases">
+                            <h4>MMA</h4>
+                            <img src="../assets/mma.jpg" alt=" MMA">
+                            <p>Se trata de una combinación de muchas artes marciales,
+                                algunas más tradicionales y otras modernas.
+                            </p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
 
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/box.jpg" class="card-img-top " alt="imagen de boxeo">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">Boxeo</h3>
-                            <p class="card-text textTienda">Deporte que consiste en la lucha a puñetazos de dos contendientes, de conformidad con ciertas reglas.</p>
-                        </div>
-
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
-                    </div>
-
-
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/jiu jitsu.jpg" class="card-img-top" alt="imagen de jiu-jitsu">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">Jiu jitsu</h3>
-                            <p class="card-text textTienda">El jiu-jitsu brasileño (o BJJ) es un arte marcial, deporte de combate y sistema de defensa personal desarrollado en Brasil. </p>
                         </div>
 
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
-                        </div>
-                    </div>
+                        <div class="contenedorCardsClases">
+                            <h4>Jiu jitsu</h4>
+                            <img src="../assets/jiu jitsu.jpg" alt=" jiu-jitsu">
+                            <p>El jiu-jitsu brasileño es un arte marcial, deporte de combate y sistema de defensa
+                                personal desarrollado en Brasil. </p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
 
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/gap.jpg" class="card-img-top" alt="imagen de GAP">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">GAP</h3>
-                            <p class="card-text textTienda">El GAP es una clase grupal dirigida por un monitor que se centran en el trabajo de glúteos, abdomen y piernas.</p>
-                        </div>
 
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card cardsTienda  ">
-                        <img src="../assets/mma.jpg" class="card-img-top" alt="imagen de MMA">
-                        <div class="card-body">
-                            <h3 class="tituloTiendaCard card-title">MMA</h3>
-                            <p class="card-text textTienda">Se trata de una combinación de muchas artes marciales, algunas más tradicionales y otras modernas.</p>
+                <div class="contenedorTiendaFit">
+
+                    <div class="contenedorCardsGeneral">
+
+                        <div class="contenedorCardsClases">
+                            <h4>Boxeo</h4>
+                            <img src="../assets/box.jpg" alt="boxeo">
+                            <p>Deporte que consiste en la lucha a puñetazos de dos
+                                contendientes, de conformidad con ciertas reglas.</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
+
                         </div>
 
-                        <div class="card-body">
-                            <a href="#" class="textLinkTiendaCard card-link">comprar</a>
-                            <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                        <div class="contenedorCardsClases">
+                            <h4>taekwondo</h4>
+                            <img src="../assets/taekando.jpg" alt="taekwondo">
+                            <p>El Taekwondo es un arte marcial moderno de los coreanos.
+                                Este deporte o arte utiliza diferentes técnicas de patada.</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
+
+                        </div>
+
+                        <div class="contenedorCardsClases">
+                            <h4>spinning</h4>
+                            <img src="../assets/spinnig.jpg" alt="spinnig">
+                            <p>ejercicio aeróbico y cardiovascular que se realiza sobre una
+                                bicicleta estática en el que se trabaja el tren inferior.</p>
+                            <div class="linkTienda">
+                                <a href="#" class="textLinkTiendaCard card-link">comprar</a>
+                                <a href="#" class="textLinkTiendaCard card-link">agregar al carrito</a>
+                            </div>
+
                         </div>
                     </div>
-
                 </div>
 
 
+            </div>
 
-            </article>
+
+
         </section>
 
     </main>
 
     <footer>
-        <div class="footerContenedor"></div>
-        <div class="siteMaps">
 
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./tienda.html">tienda</a></li>
-                <li><a href="./clases.html">Clases</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./sedes.html">sedes</a></li>
-            </ul>
-
+        <div class="logoContenedor">
+            <img src="../assets/LOGO-MGFC.jpg" alt="">
         </div>
 
+        <div class="siteMaps">
+            <div>
+                <h3>ayuda</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./tienda.html">tienda</a></li>
+                    <li><a href="./clases.html">Clases</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./sedes.html">sedes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>formas de pago</h3>
+                <ul>
+                    <li>PayPall</li>
+                    <li>Billetera electronica</li>
+                    <li>efectivo en sucursales</li>
+                    <li>puntos de pago</li>
+                </ul>
+            </div>
+
+        </div>
 
 
         <div class="footerLow">
             <div class="correo">
                 <h3>correo</h3>
-            <p>tomasportunato@outlook.com</p>
+                <p>tomasportunato@outlook.com</p>
 
             </div>
             <div>
                 <h3>nuestras redes</h3>
-                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="../assets/instagram.png"
-                    alt="logo instagram"></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="../assets/youtube.png"
-                    alt="logo youtube"></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
-                    src="../assets/vectorfacebook.png" alt="logo facebook"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="../assets/instagram.png" alt="logo instagram"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="../assets/youtube.png" alt="logo youtube"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="../assets/vectorfacebook.png" alt="logo facebook"></a>
             </div>
         </div>
-    </div>
+        </div>
 
     </footer>
 
@@ -206,10 +303,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

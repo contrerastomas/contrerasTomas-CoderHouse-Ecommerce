@@ -1,5 +1,3 @@
-
-
 //generales
 
 * {
@@ -32,6 +30,12 @@ body {
     ;
     grid-template-rows: auto auto auto;
     min-height: 100vh;
-    font-family:'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
     ;
+    text-transform:capitalize;
+
+}
+
+#links{
+    @include anclas;
 }

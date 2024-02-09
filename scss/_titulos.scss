@@ -26,10 +26,16 @@ h4 {
     margin: 1rem;
 }
 
+.tituloH2{
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+}
 h2 {
-    margin: 1rem ;
+    margin: 2rem;
     color: #fafafa;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     border-bottom: rgb(166, 186, 36) solid 1px;
     width: max-content;
@@ -38,8 +44,5 @@ h2 {
 
 h3{
     font-family: 'Times New Roman', Times, serif;
-}
-p {
-    font-size: 3rem;
-    font-family: 'Roboto Mono', monospace;
+    color: white;
 }

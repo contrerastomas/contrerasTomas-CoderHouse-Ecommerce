@@ -23,39 +23,109 @@
 <body>
 
 
-    <header class="p-3 text-bg-dark">
+    <header>
         <div class="headerContainer">
+
+
+            <div id="logoHeader">
+                <a href="./index.html"><img src="./assets/LOGO-MGFC.jpg" alt=""></a>
+            </div>
+
             <h1>Mutant gym fitness center</h1>
 
-        </div>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-                
-                <button   class=" bg-danger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=" buttonNav navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse navbarConteiner" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link active bg-black" aria-current="page" href="./index.html">Home</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link" href="./pages/clases.html">Clases</a>
-                        </li>
-                        <li id="li"    class="nav-item ">
-                            <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li  id="li"   class="nav-item">
-                            <a class="nav-link" href="./pages/sedes.html">Sedes</a>
-                        </li>
-                    </ul>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg ">
+                <div class="contenedorNavbar container-fluid">
+
+                    <button class=" bg-danger navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class=" buttonNav navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbarConteiner" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li id="li" class="nav-item">
+                                <a class="nav-link active bg-black" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link" href="./pages/clases.html">Clases</a>
+                            </li>
+                            <li id="li" class="nav-item ">
+                                <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li id="li" class="nav-item">
+                                <a class="nav-link" href="./pages/sedes.html">Sedes</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </div>
+
+        <!-- cierre de navbar -->
+
+        <!-- botones y modal -->
+        <div class="botonesMenu">
+
+
+            <label class="botonMenu" for="btn-modal">iniciar Secion</label>
+
+
+            <label for="" class="botonMenu2 "><a href="./pages/registro.html">registrarse</a>
+            </label>
+
+
+            <!--Ventana Modal-->
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <div class="formularioLogin">
+                        <h3>inicia sesion</h3>
+
+                        <form method="post">
+
+                            <div class="inputBox">
+                                <input type="text" required id="userName" placeholder="nombre de usuario">
+                                <i class='bx bxs-user'></i>
+
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="password" required id="password" placeholder="contraseña">
+                                <i class='bx bxs-lock-alt'></i>
+
+                            </div>
+
+
+
+                            <div class="recordatorio">
+                                <label for=""><input type="checkbox">recordarme</label>
+                            </div>
+
+                            <div class="loginButton">
+                                <button type="submit" class="btn">iniciar sesion</button>
+                            </div>
+
+
+
+
+                        </form>
+
+                    </div>
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">Cerrar</label>
+                    </div>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
             </div>
-        </nav>
+            <!--Fin de Ventana Modal-->
+
+
+        </div>
+
     </header>
 
 
@@ -66,50 +136,144 @@
 
 
 
+
         <section>
-            
-            <h2>Home</h2>
+
+            <div class="tituloH2">
+                <h2>Home</h2>
+
+            </div>
 
 
             <!-- banner -->
 
-            <section class="bannerContenedor">
-                <img class="banner animate__animated  animate__lightSpeedInLeft" src="./assets/banner.jpeg" alt="banner de chris bumstead">
+            <section class="bannerContenedor ">
+                <div class="banner animate__animated animate__pulse">
+                    <p>todo el esfuerzo es inutil <br> si no crees en ti mismo. </p>
+                </div>
+
             </section>
 
-            <!-- contenedor de actividades -->
+            <!-- seccion de actividades -->
+            <section>
 
-            <section class="border">
-                <h2>Nuestras actividades</h2>
-                <div class="ContenedorCardsHome" data-aos="zoom-in">
+                <div class="suplementosContenedor">
 
-                    <article class="cardsHome c15">
-                        <div class="textBox"><a class="anclaHome" href="#">sala de musculacion</a> </div>
+                    <div>
+                        <h3 id="tituloSuplementos">supera tus limites</h3>
+                        <img id="bannerSuplementos" src="./assets/suplementos-inicio.jpg" alt="imagen de suplementos">
+                    </div>
 
-                    </article>
 
-                    <article class="cardsHome c16">
-                        <div class="textBox"><a class="anclaHome" href="#">crossfit</a> </div>
+                    <div class="contenedorCardsSuplementos">
 
-                    </article>
-                    <article class="cardsHome c17">
-                        <div class="textBox"> <a class="anclaHome" href="#">pilates</a></div>
-                    </article>
+                        <div class="card">
+                            <img src="./assets/ena.webp" alt="imagen suplemento">
+                            <div>
+                                <h5>ENA whey protein</h5>
+                                <div>
+                                    <a href="#">comprar</a>
+                                    <a href="#">agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/syntha.jpg" alt="imagen suplemento">
+                            <div>
+                                <h5>syntha 6</h5>
+                                <div>
+                                    <a href="#">comprar</a>
+                                    <a href="#">agregar al carrito</a>
+                                </div>
 
-                    <article class="cardsHome c18">
-                        <div class="textBox"><a class="anclaHome" href="#">entrenamiejntos <br>
-                                personalizados</a></div>
 
-                    </article>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/animal.jpg" alt="imagen suplemento">
+                            <div>
+                                <h5>animal whey</h5>
+                                <div>
+                                    <a href="#">comprar</a>
+                                    <a href="#">agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/star.png" alt="imagen suplemento">
+                            <div>
+                                <h5>star Nutricion</h5>
+                                <div>
+                                    <a href="#">comprar</a>
+                                    <a href="#">agregar al carrito</a>
+                                </div>
 
-                    <article class="cardsHome c19">
-                        <div class="textBox"><a class="anclaHome" href="./pages/clases.html">clases <br> grupales</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/body.png" alt="imagen suplemento">
+                            <div>
+                                <h5>body advance</h5>
+                                <div>
+                                    <a href="#">comprar</a>
+                                    <a href="#">agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/optimium.jpg" alt="imagen suplemento">
+                            <div>
+                                <h5>optimum nutrition</h5>
+                                <div>
+                                    <a href="#">comprar</a>
+                                    <a href="#">agregar al carrito</a>
+                                </div>
+
+                            </div>
                         </div>
 
-                    </article>
+                    </div>
+
+
+
+            </section>
+            <section class="border">
+                <div class="tituloH2">
+                    <h2>actividades</h2>
 
                 </div>
+
+                <div class="actividades">
+                    <div class="contenedorActividades">
+                        <img src="./assets/crossfit.jpg" alt="">
+                        <div>
+                            <h3>crossfit</h3>
+                            <p>El CrossFit, gracias a su variedad de ejercicios, permite trabajar de forma integral los
+                                musculos de tu cuerpo. Así tonificarás el volumen muscular corporal de forma general.
+                                Evidentemente, este trabajo te hará más fuerte, y por, ejemplo, podrás levantar pesos
+                                más fácilmente.</p>
+                            <a href="">anotarme</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="contenedorActividades" id="clasesGrupales">
+                        <img src="./assets/clasesgrupales2.jpg" alt="">
+                        <div>
+                            <h3>clases grupales</h3>
+                            <p>Nuestras calses grupales estan dictadades por los mejores entrenadores brindando su
+                                maximo esfuerzo en trabajar en equipo y cuidar a cada uno de sus alumnos para que
+                                llegues a tu maximo potencial.</p>
+                            <a href="">anotarme</a>
+                        </div>
+                    </div>
+
+                </div>
+
             </section>
+
+
 
 
 
@@ -121,16 +285,36 @@
 
 
     <footer>
-        <div class="footerContenedor"></div>
-        <div class="siteMaps">
 
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/tienda.html">tienda</a></li>
-                <li><a href="./pages/clases.html">Clases</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/sedes.html">sedes</a></li>
-            </ul>
+
+
+        <div class="logoContenedor">
+            <a href="./index.html"><img src="./assets/LOGO-MGFC.jpg" alt=""></a>
+        </div>
+
+
+
+        <div class="siteMaps">
+            <div>
+                <h3>ayuda</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/tienda.html">tienda</a></li>
+                    <li><a href="./pages/clases.html">Clases</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/sedes.html">sedes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>formas de pago</h3>
+                <ul>
+                    <li>PayPall</li>
+                    <li>Billetera electronica</li>
+                    <li>efectivo en sucursales</li>
+                    <li>puntos de pago</li>
+                </ul>
+            </div>
 
         </div>
 
@@ -140,20 +324,20 @@
         <div class="footerLow">
             <div class="correo">
                 <h3>correo</h3>
-            <p>tomasportunato@outlook.com</p>
+                <p>tomasportunato@outlook.com</p>
 
             </div>
             <div>
                 <h3>nuestras redes</h3>
-                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="./assets/instagram.png"
-                    alt="logo instagram"></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="./assets/youtube.png"
-                    alt="logo youtube"></a>
-            <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
-                    src="./assets/vectorfacebook.png" alt="logo facebook"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="./assets/instagram.png" alt="logo instagram"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand " src="./assets/youtube.png"
+                        alt="logo youtube"></a>
+                <a href="#"><img class="footerImgLogo animate__animated animate__rubberBand "
+                        src="./assets/vectorfacebook.png" alt="logo facebook"></a>
             </div>
         </div>
-    </div>
+        </div>
 
     </footer>
 

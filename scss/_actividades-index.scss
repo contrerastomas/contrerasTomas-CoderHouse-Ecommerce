@@ -1,0 +1,203 @@
+.actividades {
+    width: 100%;
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100rem;
+
+    #clasesGrupales {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedorActividades {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        border-bottom: 3px grey solid;
+        background: linear-gradient(to right, #000000, #131313, #000000);
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+
+        align-items: center;
+
+        div {
+            margin-top: 1rem;
+            width: 50%;
+            height: 100%;
+            opacity: 75%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 2rem;
+                text-align: center;
+                border-bottom: grey solid 2px;
+                font-family: 'Times New Roman', Times, serif;
+
+
+            }
+
+            p {
+                font-size: 1rem;
+                color: white;
+                padding: 2.5rem;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+
+            a {
+                font-size: 2rem;
+                text-decoration: none;
+                color: white;
+                border-top: grey solid 2px;
+                font-family: 'Times New Roman', Times, serif;
+
+                border-bottom: grey solid 2px;
+
+            }
+
+        }
+
+        img {
+            width: 40%;
+            margin: 2rem;
+            margin-right: 1rem;
+            border: inset 5px grey;
+            opacity: 50%;
+            height: 60vh;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.suplementosContenedor {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    height: max-content;
+    justify-content: baseline;
+    position: sticky;
+    background: linear-gradient(to right, #000000, #131313, #000000);
+
+    div {
+        #tituloSuplementos {
+            text-align: center;
+            font-size: 3rem;
+            padding: 2rem;
+        }
+
+        #bannerSuplementos {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+
+            border-style: unset;
+            border-radius: 10px;
+
+
+        }
+
+    }
+
+    .contenedorCardsSuplementos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        gap: 5rem;
+        height: max-content;
+
+
+
+        .card {
+            width: 100%;
+            height: 28rem;
+            background: linear-gradient(to bottom, #393939, #131313, #393939);
+
+            border: 1px inset red;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.09);
+            }
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+                object-fit: cover;
+                height: 16rem;
+
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+
+                h5 {
+                    font-size: 1.3rem;
+                    color: #fafafa;
+                    text-align: center;
+                    margin-top: 1rem;
+                    opacity: 75%;
+
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+
+                    a {
+                        width: max-content;
+                        background-color: rgb(0, 0, 0);
+                        padding: 1rem;
+
+                        @include anclas;
+                        font-size: 1rem;
+                        padding: 1rem;
+                        border: 1px solid rgb(166, 186, 36);
+
+                        &:hover {
+                            color: black;
+                            background-color: yellow;
+                        }
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+
+
+
+
+
+
+
+}

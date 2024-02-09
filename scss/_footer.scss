@@ -15,32 +15,50 @@ footer {
 
 
 
-.registro h3 {
-    text-align: start;
-    padding: 20px;
-    color: #f1f1f1;
+.logoContenedor {
+
+    display: flex;
+    align-items: start;
+    width: 100%;
+    padding: 1rem;
+
+    img {
+        width: 5rem;
+        border-radius: 5rem;
+        height: 5rem;
+
+    }
 }
 
+
 .siteMaps {
-    ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    div{
         display: flex;
-        flex-direction: row;
-        gap: 
-        2rem;
-    }
-
-    li {
-        font-size: 1.3rem;
-        list-style: none;
-
-        a {
-            color: #f1f1f1;
-            text-decoration: none;
+        flex-direction: column;
+        h3{
             border-bottom: grey solid 1px;
-            font-family: 'Roboto Mono', monospace;
+            width: max-content;
         }
-
     }
+    ul {
+
+        li{ 
+            list-style: circle;
+            display: flex;
+            flex-direction: column;
+            color: #f1f1f1;
+            a{
+                border: none;
+                text-decoration: none;
+                color: #f1f1f1;
+            }
+        }
+    }
+
 
 }
 
@@ -73,8 +91,3 @@ footer {
     }
 }
 
-/*profe aca no le pude cambiar el tamaño a el parrafo que viene predeterminado con bootstrap*/
-
-label {
-    color: white;
-}

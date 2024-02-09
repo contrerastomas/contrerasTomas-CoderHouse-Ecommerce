@@ -1,0 +1,122 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/backgroundgym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formulario {
+        background: linear-gradient(to right, #000000, #131313, #000000);
+        width: 60rem;
+        height: 45rem;
+        position: relative;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+
+        form {
+
+
+
+            
+
+            .recordatorio {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                font-size: 2rem;
+                margin: 1rem 2rem;
+                color: white;
+                
+                    label{
+                cursor: pointer;
+
+                    }
+                
+
+                
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+
+            }
+
+            .loginButton {
+
+                display: flex;
+                padding: 1rem;
+                border-top: grey 1px solid;
+
+                button {
+                    background-color: white;
+                    width: 80%;
+                    text-align: center;
+                    margin: auto;
+                    text-transform: capitalize;
+                    font-size: 2rem;
+                    color: #333;
+                    border: none;
+                    border-radius: 2rem;
+
+                    &:hover {
+                        background-color: rgb(203, 200, 200);
+                    }
+                }
+            }
+
+
+                
+                
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+        }
+    }
+
+    .inputBox {
+        width: 100%;
+        height: 5rem;
+        margin: 30px 0;
+
+        input {
+            width: 100%;
+            padding: 2rem;
+            height: 100%;
+            background: transparent;
+            font-size: 1.5rem;
+            border: none;
+            color: white;
+            outline: none;
+            padding-left: 2rem;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        i {
+            position: absolute;
+            right: 45px;
+            color: white;
+            font-size: 20px;
+            margin-top: 1.6rem;
+        }
+    }
+}
